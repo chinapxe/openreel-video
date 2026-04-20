@@ -10,6 +10,13 @@
 
 OpenReel Video is a fully-featured browser-based video editor that runs entirely client-side. Built with React, TypeScript, WebCodecs, and WebGPU for professional-grade video editing without the need for expensive software or cloud processing.
 
+## Screenshots
+
+![OpenReel Screenshot 1](imges/0001.png)
+![OpenReel Screenshot 2](imges/0002.png)
+![OpenReel Screenshot 3](imges/0003.png)
+![OpenReel Screenshot 4](imges/0004.png)
+
 **[Try it Live](https://openreel.video)** | **[Documentation](CONTRIBUTING.md)** | **[Discussions](https://github.com/Augani/openreel-video/discussions)** | **[Twitter](https://x.com/python_xi)**
 
 ![OpenReel Editor](https://img.shields.io/badge/Lines%20of%20Code-130k+-blue) ![License](https://img.shields.io/badge/License-MIT-green) ![Status](https://img.shields.io/badge/Status-Beta-orange) ![Open Source](https://img.shields.io/badge/Open%20Source-100%25-brightgreen)
@@ -127,6 +134,22 @@ pnpm dev
 pnpm build
 pnpm preview
 ```
+
+### Offline Delivery
+
+This fork also includes a Docker-based offline delivery workflow for environments without internet access.
+
+```bash
+# Build offline bundle
+./scripts/offline-pack.sh
+
+# Or on Windows PowerShell
+./scripts/offline-pack.ps1
+```
+
+The generated `offline-bundle/` directory can be copied to another machine and started locally with Docker. See [OFFLINE-DELIVERY.md](/C:/2026/openreel-video/OFFLINE-DELIVERY.md) for details.
+
+For Windows delivery scenarios, the offline bundle also includes double-click startup and stop scripts.
 
 ---
 
